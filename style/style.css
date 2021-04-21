@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+padding: 0;
+margin: 0;
+font-family: 'Ubuntu', sans-serif;
+
+
+}
+
+html  , body {
+width: 100%;
+height: 100%;
+
+}
+#lista{
+display: flex;
+}
+#lista li {
+display: block;
+right: 0;
+color: rgb(255, 255, 255);
+margin-right: 5vh;
+margin-top: 2vw;
+font-weight: bolder;
+letter-spacing: 2pt;
+}
+#lista li a {
+text-decoration: none;
+font-style: none;
+color: rgb(255, 255, 255);
+}
+#lista li a:hover {
+color: rgb(221, 221, 221);;
+transition: 0.3s;
+}
+
+#lista li:first-child {
+margin-right: auto; 
+margin-left: 5vw; 
+font-weight: 900;
+}
+/*background*/
+
+#container{
+min-width: 100%;
+min-height: 100vh;
+width: 100%;
+height: auto;
+background-image: url('../img/background1.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: center center;
+right: 0;
+bottom: 0;   
+transition: 0.5s;
+}
+.nome {
+position: absolute;
+text-align: center;
+top: 50%;
+left: 50%;
+transform: translate(-50% , -50%);
+}
+.estilo {
+color: #fff;
+padding: 10px;
+margin: 0;
+font-weight: bolder;
+text-shadow: 2px .8px .8px  black;
+}
+
+.button {
+padding: 10px;
+font-size: 2vw;
+border-radius: 25px;
+background-color: rgba(0, 0, 0, .7);
+color: white;
+font-weight: bolder;
+cursor: pointer;
+
+}
+.button:hover {
+background-color: rgba(8, 8, 8, 0.9);
+}
+/*SEÇÃO DE SOBRE E SKILLS*/
+
+#sobre-skills {
+width: 100%;
+height: 100%;  
+display: flex;
+justify-content: space-around;
+align-self: baseline;
+align-items: center;
+margin: 0;
+scroll-behavior: smooth;
+
+
+
+
+}
+
+
+.sobre {
+width: 25%;
+height: 65vh;
+
+text-align: center;
+}
+.sobre-1 {
+color: rgb(105, 105, 105);
+font-size: 1rem;
+margin-bottom: 20px;
+line-height: 28px;
+font-weight: 800;
+text-align: left;
+margin: 0;
+padding: 10px;
+align-items: center;
+text-align: center;
+
+}
+
+.sobre h1 {
+font-weight: bolder;
+color: black;
+font-size: 40px;
+top: 0;
+
+}
+.sobre button {
+font-size: 20px;
+padding: 10px 20px 10px 20px;
+border-radius: 10px;
+background-color: rgba(5, 71, 255, .7);
+color: white;
+font-weight: 500;
+}
+.sobre button:hover {
+background-color: rgba(7, 55, 187, 0.7);
+cursor: pointer;
+}
+.foto {
+width: 25%;
+height: 65vh;
+}
+.foto img {
+width: 100%;
+height: 100%;
+background-color: rgb(31, 192, 165);
+border-radius: 30px;
+}
+.skills {
+width: 25%;
+height: 60%;
+text-align: center;
+
+}
+.skills h1 {
+font-size: 3rem;
+text-align: center;
+
+}
+.skills p {
+padding-top: 20px;
+font-size: 1em;
+line-height: 3vw;
+font-weight: 600;
+color:rgb(105, 105, 105);
+border-bottom: 4px solid rgb(5, 71, 255);
+}
+/*TRABALHOS*/
+
+#trabalhos{
+width: 100%;
+height: 10%;
+margin-top: 40px;
+display: flex;
+align-items: center;
+background-color: rgb(240, 240, 240);
+justify-content: center;
+
+
+}
+#trabalhos h1 {
+color: rgb(0, 0, 0);
+border-bottom: 3px solid rgb(63, 63, 63);
+padding: 0px 20px 20px 20px;
+text-decoration: underline;
+text-decoration-color: rgb(63, 63, 63)  ;
+
+
+}
+/*TRABALHOS2*/
+
+.trabalhos-em-codigo {
+display: flex;
+width: 100%;
+height: 90%;
+align-content: center;
+justify-content: center;
+background-color: rgb(240, 240, 240);
+
+}
+
+
+
+.ajuste {
+width: 100%;
+height: 40%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.ajuste img {
+width: 400px;
+max-width: 500px;
+max-height: auto;
+box-shadow: 3px 3px 4px 4px rgba(0, 0, 0, 0.2);
+border-radius: 30px;
+
+}
+.ajuste img:hover {
+filter: grayscale(100%);
+transform: scale(1.05);
+transition: 0.5s;
+cursor: pointer;
+
+}
+/*MODAL*/
+.bgnegro {
+width: 100%;
+height: 90vh;
+background-color:rgba(0, 0, 0, .7);
+position: absolute;
+display: none;
+transition: all 0.3s;
+}
+.bgnegro img {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 100%;
+max-width: 768px;
+height: 500px;
+
+}
+.bgnegro button {
+float: right;
+padding: 5px;
+background-color: black;
+color: white;
+cursor: pointer;
+font-size: 20pt;
+}
+.bgnegro button:hover {
+background-color: rgb(43, 42, 42);
+}
+
+
+
+
+/*MODAL 2*/
+
+.bgnegro1 {
+width: 100%;
+height: 90vh;
+background-color:rgba(0, 0, 0, .7);
+position: absolute;
+display: none;
+transition: all 0.3s;
+}
+.bgnegro1 img {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 100%;
+max-width: 768px;
+height: 500px;
+}
+.bgnegro1 button {
+float: right;
+padding: 5px;
+background-color: black;
+color: white;
+cursor: pointer;
+font-size: 20pt;
+}
+.bgnegro1 button:hover {
+background-color: rgb(43, 42, 42);
+}
+
+
+/*MODAL3*/
+.bgnegro2 {
+    width: 100%;
+    height: 90vh;
+    background-color:rgba(0, 0, 0, .7);
+    position: absolute;
+    display: none;
+    transition: all 0.3s;
+}
+.bgnegro2 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 768px;
+    height: 500px;
+
+}
+.bgnegro2 button {
+float: right;
+padding: 5px;
+background-color: black;
+color: white;
+cursor: pointer;
+font-size: 20pt;
+}
+.bgnegro2 button:hover {
+background-color: rgb(43, 42, 42);
+}
+
+
+
+
+
+/*MODAL4*/
+.bgnegro3 {
+width: 100%;
+height: 100%;
+background-color:rgba(0, 0, 0, .7);
+position: absolute;
+display: none;
+transition: all 0.3s;
+}
+.bgnegro3 img {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+.bgnegro3 button {
+float: right;
+padding: 5px;
+background-color: black;
+color: white;
+cursor: pointer;
+font-size: 20pt;
+}
+.bgnegro3 button:hover {
+background-color: rgb(43, 42, 42);
+}
+
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+}
+.content form  {
+    text-align: center;
+    margin-top: 20px;
+}
+.content form div input {
+    padding: 10px;  
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+.content form div textarea {
+    padding: 10px;  
+    margin-bottom: 10px;
+    width: 100%;
+    height: 150px;
+
+}
+#botao {
+    margin-left: 13px;
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+#botao:hover {
+    background-color: rgb(228, 228, 228);
+    cursor: pointer;
+    color: black;
+    font-weight: bolder;
+}
+
+.content form {
+    width: 98%;
+    max-width: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FINAL/FOOTER*/
+.final {
+background-color: black;
+text-align: center;
+}
+.final h1, p {
+font-size: 14px;
+font-style: italic;
+color: white;
+}
+
+
+
+
+
+@media  (max-width: 533px) {
+    #lista{
+        display: flex;
+        justify-content: space-between;
+        }
+        #lista li {
+        display: flex;
+        color: rgb(255, 255, 255);
+        margin-right: 0px;
+        margin-top: 20px;
+        font-weight: bolder;
+        letter-spacing: 2pt;
+        }
+        #lista li a {
+        text-decoration: none;
+        font-style: none;
+        color: rgb(255, 255, 255);
+        }
+        
+        #lista li:first-child {
+        display: flex;
+        margin-right: 0px; 
+        margin-left: 0px; 
+        font-weight: 900;
+        }
+
+
+}
+
+@media (max-width: 900px) {
+#sobre-skills {
+width: 100%;
+height: 100%;
+display: grid;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}        
+.sobre {
+width: 100%;
+height: 60vh;
+text-align: center;
+}
+.foto {
+display: none;
+}
+.skills {
+width: 100%;
+height: 60vh;
+}
+
+
+}
+
+
+
+@media (max-width: 900px) {
+
+    .trabalhos-em-codigo {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        background-color: rgb(240, 240, 240);
+        }
+        
+        
+        
+        .ajuste {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+        
+    
+        
+        .ajuste img {
+        width: 80vw;
+        box-shadow: 3px 3px 4px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 30px;
+        text-align: center;
+        
+        }
+        .content form {
+            width: 80%;
+            max-width: 500px;
+        }
+}
+@media (max-width: 768px) {
+    .ajuste {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}

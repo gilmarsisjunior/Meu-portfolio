@@ -1,0 +1,108 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilmar S. S Junior</title>
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <script src="javascript/javascript.js"> </script>
+</head>
+
+
+
+
+<body>
+
+        <header id="container" >
+            <ul id="lista">
+                <li> <a href="index.html">GILMAR</a></li>
+                <li> <a href="#sobre-skills">SOBRE</a></li>
+                <li> <a href="#trabalhos">TRABALHOS</a></li>
+                <li> <a href="#formulario">CONTATO</a></li>
+                <li> <a href="https://github.com/gilmarsisjunior">GITHUB</a></li>
+            </ul>
+       </header>
+        <div class="nome">
+                <h1 class="estilo">Gilmar Silva Santos Junior</h1>
+                <h3 class="estilo">Front-end & Back-end Developer.</h3>
+                <a href="https://www.linkedin.com/in/gilmar-sisjunior/" target="_blank"> <button class="button">Contato</button></a>
+
+         </div>
+
+         <section id="sobre-skills">
+             <div class="sobre">
+                 <h1 class="sobre-1">Sobre</h1>
+                 <p class="sobre-1">Sou um Desenvolvedor web Fullstack Júnior com perfil analítico e apaixonado pelo orgulho gerado ao resolver problemas da profissão. </br>
+                    Tenho conhecimentos em ferramentas web para manipulação de sites, criação de layouts diversos, conexão com banco de dados, CRUD e um desejo imenso por aprender coisas novas.
+                    <a href="#trabalhos"><button>Meus Trabalhos</button></a>
+             </div>
+             <div class="foto"> <img src="img/separador.jpg" alt=""></div>
+             <div class="skills">
+                 <h1>Habilidades</h1>
+                 <p>HTML</p>
+                 <p>CSS</p>
+                 <p>JAVASCRIPT</p>
+                 <p>PHP</p>
+                 <p>MySQL</p>
+                 <p>INGLÊS INTERMEDIÁRIO (B1)</p>
+             </div>
+         </section>
+            <div id="trabalhos"><h1>Trabalhos</h1></div>
+
+            <section class="trabalhos-em-codigo">
+                <div class="bgnegro"><img src="img/separador1.jpg">
+                <button onclick="fechaModal()">X</button></div>
+
+                <div class="bgnegro1"><img src="img/separador2.jpg" >
+                    <button  onclick="fechaModal1()">X</button></div>
+ 
+                    
+                 <div class="bgnegro2"><img src="img/separador3.jpg">
+                        <button onclick="fechaModal2()">X</button></div>    
+                
+                 <div class="bgnegro3"><img src="img/separador.jpg" style="width: 700px; height: 500px;">
+                            <button  onclick="fechaModal3()">X</button></div>
+
+                    <div class="ajuste" >
+                        <img src="img/separador1.jpg"class="amplia_imagens"onclick="chamaModal()">
+                        <img src="img/separador2.jpg"class="amplia_imagens"onclick="chamaModal1()">
+                        <img src="img/separador3.jpg"class="amplia_imagens"onclick="chamaModal2()">
+                    </div>
+            </section>
+                <section class="content">
+                   
+                <form method="post" action="PHP/formulario.php" id="formulario">
+                    <h1>Formulário de Contato</h1>
+                    <div>
+                            <input name="nome" type="text"  placeholder="Nome:" required="required"> </input>
+                    </div>
+
+                    <div>
+                            <input name="email" type="text" placeholder="E-mail:"  id="email"> </input>
+                    </div>
+
+                    <div>
+                            <input name="telefone" type="text" placeholder="Ex: (73) 0 0000-0000:" required="required"> </input>
+                    </div>
+                         </br>
+                    <div>
+                            <textarea name="msg" id="" cols="25" rows="5" placeholder="Mensagem:" required="required"></textarea>
+                    </div>  
+                        <div><input type="submit" name="" id="botao" value="Enviar"></input></div>
+                </form>
+            </section>
+
+                
+
+
+
+
+
+
+            <footer class="final"><h1>Desenvolvedor:</h1>
+                    <p>Gilmar Silva Santos Junior</p></footer>
+</body>
+</html>
